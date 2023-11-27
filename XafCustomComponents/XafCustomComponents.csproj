@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="22.2.3" />
+	  <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="22.2.3" />
+	  <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XafBlazorComponents.Module\XafBlazorComponents.Module.csproj" />
+  </ItemGroup>
+
+</Project>
